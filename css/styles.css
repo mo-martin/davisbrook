@@ -1,6 +1,7 @@
 /* sass --watch styles.scss:styles.css */
 @import url(https://fonts.googleapis.com/css?family=Fjalla+One);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300);
 * {
   box-sizing: border-box; }
 
@@ -318,31 +319,32 @@ main content p {
   flex-wrap: wrap;
   justify-content: center; }
 
-.homecontactleft, .homecontactright {
-  width: 50%; }
+.homecontactarea {
+  margin: 10px;
+  transition: all 0.3s ease;
+  -webkit-transition-delay: all 0.3s ease;
+  -moz-transition-delay: all 0.3s ease;
+  -ms-transition-delay: all 0.3s ease;
+  -o-transition-delay: all 0.3s ease; }
 
-.homecontact table {
-  width: 100%;
-  max-width: 280px; }
+.homecontactarea:hover {
+  padding-top: 10px; }
 
-.homecontact table td:nth-of-type(odd) {
-  width: 32px;
-  height: 32px; }
+.homecontactarea {
+  text-align: center; }
+  .homecontactarea h2 {
+    font-family: roboto, sans-serif;
+    color: #bc0c0c;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .homecontactarea h5 {
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0px;
+    color: #294364; }
 
-.homecontact table td:nth-of-type(even) {
-  padding-left: 10px; }
-
-.homecontact table td img {
-  width: 100%;
-  height: auto;
-  padding: 0px; }
-
-@media (min-width: 768px) {
-  .homecontact .map iframe {
-    float: right;
-    margin-right: 20px; } }
 @media (max-width: 768px) {
-  .homecontact .contentleft, .homecontact .contentright {
+  .homecontact .contentleft, .contentright {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
