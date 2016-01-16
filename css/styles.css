@@ -234,7 +234,11 @@ main content p {
 @media (max-width: 768px) {
   .contentleft, .contentright {
     width: 80%;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; } }
 @media (max-width: 400px) {
   .contentleft, .contentright {
     width: 100%;
@@ -310,45 +314,6 @@ main content p {
   .sellingpoint h4 {
     font-size: 1.3em; } }
 /* Home - Contact */
-.homecontact {
-  background: #eeeeee;
-  height: auto;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.homecontactarea {
-  margin: 10px;
-  transition: all 0.3s ease;
-  -webkit-transition-delay: all 0.3s ease;
-  -moz-transition-delay: all 0.3s ease;
-  -ms-transition-delay: all 0.3s ease;
-  -o-transition-delay: all 0.3s ease; }
-
-.homecontactarea:hover {
-  padding-top: 10px; }
-
-.homecontactarea {
-  text-align: center; }
-  .homecontactarea h2 {
-    font-family: roboto, sans-serif;
-    color: #bc0c0c;
-    font-weight: 300;
-    margin-top: 10px;
-    margin-bottom: 5px; }
-  .homecontactarea h5 {
-    font-family: 'Fjalla One', sans-serif;
-    margin: 0px;
-    color: #294364; }
-
-@media (max-width: 768px) {
-  .homecontact .contentleft, .contentright {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center; } }
 /*About */
 .map iframe {
   max-width: 100%; }
@@ -421,6 +386,45 @@ main content p {
   .propertythumbs img {
     width: 50%; } }
 /* Contact */
+.contact {
+  background: #eeeeee;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.contactarea {
+  margin: 20px;
+  transition: all 0.3s ease;
+  -webkit-transition-delay: all 0.3s ease;
+  -moz-transition-delay: all 0.3s ease;
+  -ms-transition-delay: all 0.3s ease;
+  -o-transition-delay: all 0.3s ease; }
+
+.contactarea:hover {
+  padding-top: 5px; }
+
+.contactarea {
+  text-align: center; }
+  .contactarea h2 {
+    font-family: roboto, sans-serif;
+    color: #bc0c0c;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .contactarea h5 {
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0px;
+    color: #294364; }
+
+@media (max-width: 768px) {
+  .contact {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center; } }
 /* Contact Form */
 .contactform {
   width: 100%;
