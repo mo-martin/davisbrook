@@ -23,7 +23,7 @@
 				<a href="#skipnav">Skip to Content</a>!
 			</p>
 </div>
-
+<!--
 <header class="mainheader" role="banner">
 	<div class="headerbg">
 		<div class="headerleft"><img src="images/logowhite.png" alt="Davisbrook Housing Logo"/></div>
@@ -37,6 +37,21 @@
 <nav class="mainnav" role="navigation">
 	<div class="responsivenav" id="navigation">
 		<button class="navtoggle">toggle</button>
+			<ul class="mainlinks">
+				<li role="menuitem"><a href="index.php">Home</a></li>
+				<li role="menuitem"><a href="about.php">About Us</a></li>
+				<li role="menuitem"><a href="properties.php">Our Properties</a></li>
+				<li role="menuitem"><a href="contact.php">Contact Us</a></li>
+			</ul>
+	</div>
+</nav>
+-->
+<nav class="mainnav" role="navigation">
+	<div class="navlogo">
+	<a href="index.php"><img src="images/logo.png" alt="Davisbrook Housing Logo"/></a>
+	</div>
+	<button class="navtoggle">toggle</button>
+	<div class="responsivenav" id="navigation">
 			<ul class="mainlinks">
 				<li role="menuitem"><a href="index.php">Home</a></li>
 				<li role="menuitem"><a href="about.php">About Us</a></li>

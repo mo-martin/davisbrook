@@ -4,9 +4,9 @@ $desc = "";
 include("includes/header.php"); ?>
 
 <main role="main" id="propertiespage">
-	<div class="pagetitle">
-		<h1>All Properties</h1>
-	</div>
+	<section class="pagetitle">
+		<h1>Properties</h1>
+	</section>
 	<section class="content">
 		<section class="propertycontainer">
 			<div class="property property1">

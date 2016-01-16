@@ -4,9 +4,9 @@ $desc = "About Davisbrook Ltd";
 include("includes/header.php"); ?>
 
 <main role="main">
-	<div class="pagetitle">
+	<section class="pagetitle">
 		<h1>About</h1>
-	</div>
+	</section>
 	<section class="content">
 		<section class="contentleft flexcenter">
 			<div class="abouttext">

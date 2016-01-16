@@ -4,9 +4,9 @@ $desc = "";
 include("includes/header.php"); ?>
 
 <main role="main">
-	<div class="pagetitle">
+	<section class="pagetitle">
 		<h1>Contact</h1>
-	</div>
+	</section>
 	<section class="contact">
 		<a href="mailto:info@davisbrook.co.uk">
 		<div class="contactarea"><img src="images/emailcircle.png" alt="Email - Davisbrook Ltd" />
@@ -33,11 +33,14 @@ include("includes/header.php"); ?>
 		</div>
 		</a>
 	</section>
-	<section class="contactform">
-		<form id="contactform" name="contact" method="post" action="process.php" onSubmit="alert('Message Successfully Sent!')">
-		    <input type="text" name="Name" id="Name" size="30" placeholder="Name" required=""> 
-			<input type="text" name="Email" id="Email" size="30" placeholder="Email" required=""> 
-			<textarea name="Message" id="Message" placeholder="Message" required></textarea>
+	<section id="contactform">
+		<form class="contactform" name="contact" method="post" action="process.php" onSubmit="alert('Message Successfully Sent!')">
+			<label for="Name">Name <span>*</span></label>
+			<input type="text" name="Name" id="Name" size="30" required> 
+			<label for="Email">Email <span>*</span></label>
+			<input type="text" name="Email" id="Email" size="30" placeholder="" required> 
+			<label for="Message">Message <span>*</span></label>
+			<textarea name="Message" id="Message" placeholder="" required></textarea>
 			<input id="submit" type="submit" name="submit" value="Send" />  
 		</form>
 	</section>
