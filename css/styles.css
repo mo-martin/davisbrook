@@ -344,14 +344,49 @@ main content p {
     width: 100%; } }
 /* Home - Contact */
 /*About */
-.map iframe {
-  max-width: 100%; }
+.aboutheader {
+  height: 300px;
+  width: 100%;
+  background-image: url("../images/manchester11.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
+@media (min-width: 780px) {
+  .aboutheader {
+    background-image: url("../images/manchester1.jpg"); } }
+.abouttext {
+  width: 50%;
+  text-align: left;
+  margin-top: 20px;
+  max-width: 580px; }
+  .abouttext:nth-child(2) {
+    border-right: 1px solid #737373; }
+  .abouttext p {
+    color: #737373; }
+  .abouttext h2 {
+    font-family: roboto, sans-serif;
+    display: inline-block;
+    color: #bc0c0c;
+    font-weight: 300;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #881616; }
+
+@media (max-width: 780px) {
+  .abouttext {
+    width: 100%; }
+    .abouttext:nth-child(2) {
+      border-right: none; }
+    .abouttext h2 {
+      text-align: center; } }
 /*Properties */
 .content section.propertycontainer:first-child {
   padding-top: 0px; }
 
-.content section.propertycontainer:nth-of-type(even) {
+.content section.propertycontainer:nth-of-type(odd) {
   background: #eeeeee; }
 
 .content section.propertycontainer {
@@ -372,7 +407,7 @@ main content p {
 
 .property div {
   border: 1px solid red;
-  background: #666666; }
+  background: #BDBDBD; }
 
 .propertyinfo {
   width: 70%;
